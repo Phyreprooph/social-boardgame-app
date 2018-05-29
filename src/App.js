@@ -1,9 +1,12 @@
-import React, { Component } from "react"
-import logo from "./logo.svg"
-import bgglogo from "./bgg-icon.svg"
-import "./App.css"
-import "semantic-ui-css/semantic.min.css"
-import { Image, Button, Icon } from "semantic-ui-react"
+import React, { Component } from 'react';
+
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import logo from './logo.svg';
+import bgglogo from './bgg-icon.svg';
+import './App.css';
+import 'semantic-ui-css/semantic.min.css';
+import { Image, Button, Icon } from 'semantic-ui-react';
 
 const FacebookButton = ({ text, onClick }) => (
   <div>
@@ -12,7 +15,7 @@ const FacebookButton = ({ text, onClick }) => (
       {text}
     </Button>
   </div>
-)
+);
 
 const GoogleButton = ({ text, onClick }) => (
   <div>
@@ -21,7 +24,7 @@ const GoogleButton = ({ text, onClick }) => (
       {text}
     </Button>
   </div>
-)
+);
 
 const BGGButton = ({ text, onClick }) => (
   <div>
@@ -32,7 +35,7 @@ const BGGButton = ({ text, onClick }) => (
       {text}
     </Button>
   </div>
-)
+);
 
 class App extends Component {
   render() {
@@ -49,8 +52,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
