@@ -1,9 +1,8 @@
 import React, { Component } from "react"
-import logo from "./logo.svg"
+
 import bgglogo from "./bgg-icon.svg"
-import "./App.css"
-import "semantic-ui-css/semantic.min.css"
-import { Image, Button, Icon } from "semantic-ui-react"
+import "./Start.css"
+import { Button, Icon } from "semantic-ui-react"
 
 const FacebookButton = ({ text, onClick }) => (
   <div>
@@ -27,21 +26,17 @@ const BGGButton = ({ text, onClick }) => (
   <div>
     <Button icon labelPosition="left" size="big" color="orange">
       <Icon>
-        <img src={bgglogo} className="google icon" />
+        <img src={bgglogo} alt="boardgamegeek" className="google icon" />
       </Icon>
       {text}
     </Button>
   </div>
 )
 
-class App extends Component {
+class Start extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <Image className="App-logo" src={logo} alt="logo" centered />
-          <h1 className="App-title">Welcome to React</h1>
-        </div>
+      <div>
         <FacebookButton text="Login with Facebook" />
         <GoogleButton text="Login with Google" />
         <BGGButton text="Login with BoardGameGeek" />
@@ -53,4 +48,4 @@ class App extends Component {
   }
 }
 
-export default App
+export { Start }

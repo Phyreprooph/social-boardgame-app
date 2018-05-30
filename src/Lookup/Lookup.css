@@ -1,0 +1,33 @@
+.BoardGameTile {
+  font-size: 20px;
+  justify-content: baseline;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 2em;
+  align-items: center;
+}
+
+.BoardGameTile__year {
+  width: 22%;
+}
+BoardGameTile__name {
+  width: 50%;
+  text-align: left;
+}
+
+.BoardGameTile__check--unchecked {
+  width: 33%;
+  height: 64px;
+  width: 64px;
+  border: 2px solid blue;
+}
+
+.BoardGameTile__check--checked {
+  width: 33%;
+  height: 64px;
+  width: 64px;
+  background: blue;
+  border: 2px solid blue;
+}
